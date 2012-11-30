@@ -1,0 +1,103 @@
+!!! 5
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        title=title
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name='description', content='')
+        meta(name='author', content='')
+        link(href='/stylesheets/style.css', rel='stylesheet')
+        link(href='/stylesheets/style.css', rel='stylesheet')
+        
+        //if lt IE 9
+            script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    body
+        .navbar.navbar-inverse
+            .navbar-inner
+                .container
+                    a.brand(href='#')=title
+    
+        p(style="text-align:center") 
+            a(href="https://github.com/visionmedia/jade#jade---template-engine") Jade
+            |  is a high performance template engine heavily influenced by 
+            a(href="http://haml-lang.com/") Haml
+            |  and implemented with JavaScript for 
+            a(href="http://nodejs.org/") node
+        .editor.row-fluid
+            .span6
+                textarea#html.xml
+                    | <html style="color: green">
+                    |   <!-- this is a comment -->
+                    |   <head>
+                    |     <title>Mixed HTML Example</title>
+                    |   </head>
+                    |   <body>
+                    |     <h1>Mixed HTML Example</h1>
+                    |       <ul>
+                    |         <li>
+                    |           <a href="/url" title="Link Title">Link 1</a>
+                    |         </li>
+                    |       </ul>
+                    |     <script>
+                    |       function jsFunc(arg1, arg2) {
+                    |         if (arg1 && arg2) console.log("achoo");
+                    |       }
+                    |     </script>
+                    |   </body>
+                    | </html>
+                
+                button.btn.btn-inverse#goJade
+                    | Convert to Jade
+                    i.icon-arrow-right.icon-white
+            .span6
+                textarea#jade.javascript
+                    | html(style='color: green;')
+                    |   // this is a comment
+                    |   head
+                    |     title Mixed HTML Example
+                    |   body
+                    |     h1 Mixed HTML Example
+                    |     ul
+                    |       li
+                    |         a(href='/url', title="Link Title") Link 1
+                    |     script
+                    |       function jsFunc(arg1, arg2) {
+                    |       if (arg1 && arg2) console.log("achoo");
+                    |       }
+                button.btn.btn-inverse#goHtml
+                    i.icon-arrow-left.icon-white
+                    | Convert to Html
+        .share
+            div(style='float: left;')
+                iframe(src='http://ghbtns.com/github-btn.html?user=ekinertac&repo=dotfiles&type=watch&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='110px', height='20px')
+                iframe(src='http://ghbtns.com/github-btn.html?user=ekinertac&repo=dotfiles&type=fork&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='95px', height='20px')
+            .addthis_toolbox.addthis_default_style(addthis:url='http://html2jade.com')
+                a.addthis_button_facebook_like(fb:like:layout='button_count')
+                a.twitter-share-button(href='https://twitter.com/share', data-count='horizontal', data-related='Html/Jade Converter') Tweet
+                a.addthis_button_google_plusone(g:plusone:size='medium')
+            // AddThis Button END
+            script(type='text/javascript', src='//platform.twitter.com/widgets.js')
+            script(src="//s7.addthis.com/js/250/addthis_widget.js#ekinertac=ekinertac")
+
+        
+
+        script(src="http://code.jquery.com/jquery.min.js")
+        
+        script(src="/javascripts/codemirror.js")
+        script(src="/javascripts/syntax/htmlembedded.js")
+        script(src="/javascripts/syntax/javascript.js")
+        script(src="/javascripts/syntax/xml.js")
+        
+        script(src="/javascripts/bootstrap.min.js")
+        script(src="/javascripts/app.js")
+        script
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36670999-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+

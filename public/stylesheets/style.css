@@ -1,0 +1,34 @@
+@import "codemirror.css";
+
+@import "ambiance.css";
+
+@import "bootstrap.css";
+
+@import "bootstrap-responsive.min.css";
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #212121;
+  color: white;
+}
+a {
+  color: #999c9a;
+}
+#html,
+#jade {
+  height: 900px;
+}
+.row-fluid.editor {
+  width: 90%;
+  margin: 0 auto;
+}
+.row-fluid.editor button {
+  display: block;
+  margin: 10px auto;
+}
+.row-fluid.editor button i {
+  margin: 0 5px;
+}
+.share {
+  margin: 0 auto;
+  width: 500px;
+}
