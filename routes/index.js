@@ -5,11 +5,13 @@ var print = function(a){console.log(a)}
 var html_jade = require('../node_modules/html2jade/lib/html2jade.js');
 var jade_html = require('jade');
 var fs = require('fs');
+var col = require('cli-color');
 
 exports.index = function(req, res){
     res.render('layout', { 
         title: 'Html/Jade Converter'
     });
+    console.log(col.red('new user here'))
 };
 
 exports.html = function(req, res){
