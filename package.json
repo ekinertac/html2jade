@@ -9,6 +9,7 @@
     "express": "3.0.3",
     "jade": "*",
     "less-middleware": "*",
-    "html2jade": "*"
+    "html2jade": "*",
+    "cli-color": "*"
   }
 }
